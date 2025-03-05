@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://s5dqteeuut03"]
 
-[ext_resource type="Script" path="res://lib/decoration/deco_handler/deco_handler.gd" id="1_73o41"]
+[ext_resource type="Script" uid="uid://bk8atpigww7hl" path="res://lib/decoration/deco_handler/deco_handler.gd" id="1_73o41"]
 [ext_resource type="AudioStream" uid="uid://4xukrtvev8m7" path="res://generic/sounds/delete.ogg" id="2_73mo1"]
 
 [node name="DecoHandler" type="Node3D"]

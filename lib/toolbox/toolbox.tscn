@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://rn5fh3rx0ovg"]
 
-[ext_resource type="Script" path="res://lib/toolbox/toolbox.gd" id="1_2co4q"]
+[ext_resource type="Script" uid="uid://ciutneko4lsxu" path="res://lib/toolbox/toolbox.gd" id="1_2co4q"]
 [ext_resource type="PackedScene" uid="uid://c7mfp50wcm5wy" path="res://lib/skill_button/skill_button.tscn" id="2_xy11a"]
 [ext_resource type="Texture2D" uid="uid://6vp2jyvqvvbc" path="res://lib/toolbox/textures/toolbox_ui.png" id="3_ap58g"]
 [ext_resource type="Texture2D" uid="uid://dv0f3vmgqba2p" path="res://generic/textures/blur_bright.png" id="3_rqk3s"]

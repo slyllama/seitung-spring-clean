@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bngsvcump0aee"]
 
-[ext_resource type="Script" path="res://decorations/test_wall/deco_test_wall.gd" id="1_0q4k2"]
+[ext_resource type="Script" uid="uid://t6eybuhdn6ac" path="res://decorations/test_wall/deco_test_wall.gd" id="1_0q4k2"]
 [ext_resource type="PackedScene" uid="uid://bcdukpdiq4241" path="res://decorations/test_wall/meshes/wall.glb" id="3_egx3r"]
 [ext_resource type="PackedScene" uid="uid://yw1cuhacvnoh" path="res://decorations/test_wall/meshes/wall_lod.glb" id="3_fqwdd"]
 

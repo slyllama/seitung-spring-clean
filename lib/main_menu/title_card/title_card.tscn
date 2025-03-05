@@ -1,7 +1,7 @@
 [gd_scene load_steps=36 format=3 uid="uid://d2xtvgd1tw1q7"]
 
-[ext_resource type="Script" path="res://lib/main_menu/title_card/title_card.gd" id="1_syrn8"]
-[ext_resource type="Shader" path="res://lib/main_menu/title_card/shaders/shader_logo.gdshader" id="2_41jbb"]
+[ext_resource type="Script" uid="uid://degotroonbv60" path="res://lib/main_menu/title_card/title_card.gd" id="1_syrn8"]
+[ext_resource type="Shader" uid="uid://bi03ysjrnymmd" path="res://lib/main_menu/title_card/shaders/shader_logo.gdshader" id="2_41jbb"]
 [ext_resource type="Texture2D" uid="uid://n0dr8y0nclty" path="res://lib/dragger/materials/textures/paint_mask.png" id="3_ha0jo"]
 [ext_resource type="Texture2D" uid="uid://cg2gi43kvjm2t" path="res://lib/main_menu/title_card/textures/words_b_1.png" id="4_0n7jl"]
 [ext_resource type="Texture2D" uid="uid://b8cdl6c84bmik" path="res://lib/main_menu/title_card/textures/words_b_2.png" id="5_6mvx8"]
@@ -21,10 +21,12 @@ fill_to = Vector2(0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r0jlg"]
 shader = ExtResource("2_41jbb")
-shader_parameter/paint_mask_exponent = 1.0
-shader_parameter/value = 0.0
 shader_parameter/paint_mask_texture = ExtResource("3_ha0jo")
 shader_parameter/paint_mask_gradient = SubResource("GradientTexture2D_v2cij")
+shader_parameter/paint_mask_exponent = 1.0
+shader_parameter/value = 0.0
+shader_parameter/mask_scale = 1.0
+shader_parameter/exposure = 1.0
 
 [sub_resource type="Gradient" id="Gradient_h6n1f"]
 
@@ -35,10 +37,12 @@ fill_to = Vector2(0, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hm66m"]
 shader = ExtResource("2_41jbb")
-shader_parameter/paint_mask_exponent = 1.0
-shader_parameter/value = 0.0
 shader_parameter/paint_mask_texture = ExtResource("3_ha0jo")
 shader_parameter/paint_mask_gradient = SubResource("GradientTexture2D_ajm1b")
+shader_parameter/paint_mask_exponent = 1.0
+shader_parameter/value = 0.0
+shader_parameter/mask_scale = 1.0
+shader_parameter/exposure = 1.0
 
 [sub_resource type="Animation" id="Animation_op7tt"]
 resource_name = "Float"
@@ -242,8 +246,23 @@ tracks/7/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_es33u"]
 _data = {
-"Float": SubResource("Animation_op7tt"),
-"RESET": SubResource("Animation_il5cn")
+&"Float": SubResource("Animation_op7tt"),
+&"RESET": SubResource("Animation_il5cn")
+}
+
+[sub_resource type="Animation" id="Animation_3fwjh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-491, -84)]
 }
 
 [sub_resource type="Animation" id="Animation_b1qnh"]
@@ -264,25 +283,10 @@ tracks/0/keys = {
 "values": [Vector2(-491, -84), Vector2(-491, -90), Vector2(-491, -84)]
 }
 
-[sub_resource type="Animation" id="Animation_3fwjh"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-491, -84)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gq085"]
 _data = {
-"RESET": SubResource("Animation_3fwjh"),
-"float": SubResource("Animation_b1qnh")
+&"RESET": SubResource("Animation_3fwjh"),
+&"float": SubResource("Animation_b1qnh")
 }
 
 [sub_resource type="Curve" id="Curve_5f0s8"]

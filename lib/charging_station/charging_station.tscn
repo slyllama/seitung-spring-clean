@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ckk5clionshof"]
 
 [ext_resource type="PackedScene" uid="uid://dytel2pgikquu" path="res://lib/gadget/gadget.tscn" id="1_02rig"]
-[ext_resource type="Script" path="res://lib/charging_station/charging_station.gd" id="2_0owda"]
+[ext_resource type="Script" uid="uid://bgnpg6qu7y4g5" path="res://lib/charging_station/charging_station.gd" id="2_0owda"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_mnhgl"]
 [ext_resource type="Texture2D" uid="uid://k1b2p1a1utat" path="res://generic/materials/textures/tile_64px_norm.png" id="3_pmmu2"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="4_7ig55"]

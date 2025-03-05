@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://djua7a6d1wk2x"]
 
-[ext_resource type="Script" path="res://lib/map/map.gd" id="1_juxxi"]
+[ext_resource type="Script" uid="uid://bvjakol7ja002" path="res://lib/map/map.gd" id="1_juxxi"]
 [ext_resource type="Texture2D" uid="uid://uuliwd58xylq" path="res://generic/hdri/sky.hdr" id="1_twsw1"]
 [ext_resource type="PackedScene" uid="uid://b5aewysclei7o" path="res://lib/player/player.tscn" id="2_dib65"]
 [ext_resource type="PackedScene" uid="uid://mc7cfdajs4rm" path="res://lib/hud/hud.tscn" id="3_d4nbx"]
@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://bxsbnw48fh4vy" path="res://maps/seitung/sounds/ambience.ogg" id="5_uggpi"]
 [ext_resource type="Texture2D" uid="uid://k1b2p1a1utat" path="res://generic/materials/textures/tile_64px_norm.png" id="6_fmnwt"]
 [ext_resource type="PackedScene" uid="uid://s5dqteeuut03" path="res://lib/decoration/deco_handler/deco_handler.tscn" id="6_p5ee1"]
-[ext_resource type="Script" path="res://lib/map/jukebox.gd" id="10_0ckh4"]
+[ext_resource type="Script" uid="uid://b4kotw6qhdlm6" path="res://lib/map/jukebox.gd" id="10_0ckh4"]
 [ext_resource type="PackedScene" uid="uid://12h1x7xjn8c2" path="res://lib/story_marker/story_marker.tscn" id="10_743fl"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_3jmvg"]

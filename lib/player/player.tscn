@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://b5aewysclei7o"]
 
-[ext_resource type="Script" path="res://addons/mmo_camera/mmo_camera.gd" id="1_lnnkv"]
-[ext_resource type="Script" path="res://lib/player/player.gd" id="1_wipkt"]
+[ext_resource type="Script" uid="uid://t7ftpgbledd2" path="res://addons/mmo_camera/mmo_camera.gd" id="1_lnnkv"]
+[ext_resource type="Script" uid="uid://cmmkrg33c7nl8" path="res://lib/player/player.gd" id="1_wipkt"]
 [ext_resource type="PackedScene" uid="uid://dow0fxe5m8rr1" path="res://lib/player/meshes/jade_bot.glb" id="4_0sx7s"]
 [ext_resource type="PackedScene" uid="uid://ctgrir47nofil" path="res://lib/player/heart/heart_particles.tscn" id="4_bxjah"]
 [ext_resource type="Texture2D" uid="uid://tofc8p3cnl3c" path="res://lib/player/textures/floor_insignia.png" id="4_i6xj3"]
@@ -49,12 +49,12 @@ alpha_curve = SubResource("CurveTexture_ktrct")
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6ksk3"]
 _data = {
-"accelerate": ExtResource("4_vjr6v"),
-"dance": ExtResource("5_4xqlf"),
-"elongate": ExtResource("10_1iq62"),
-"moving": ExtResource("8_6vkv2"),
-"reset": ExtResource("6_yk0gp"),
-"strafe_left": ExtResource("9_6mdph")
+&"accelerate": ExtResource("4_vjr6v"),
+&"dance": ExtResource("5_4xqlf"),
+&"elongate": ExtResource("10_1iq62"),
+&"moving": ExtResource("8_6vkv2"),
+&"reset": ExtResource("6_yk0gp"),
+&"strafe_left": ExtResource("9_6mdph")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_um6qk"]

@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://c8dtn2e7ub17e"]
 
-[ext_resource type="Script" path="res://decorations/door/door_container.gd" id="1_d0vvv"]
+[ext_resource type="Script" uid="uid://v27oonlpary0" path="res://decorations/door/door_container.gd" id="1_d0vvv"]
 [ext_resource type="PackedScene" uid="uid://coilvh3xwu0gu" path="res://decorations/door/meshes/door.glb" id="1_o0n3j"]
 [ext_resource type="Animation" uid="uid://cluvla1ed2hsp" path="res://decorations/door/anims/closed.res" id="2_2ghnm"]
 [ext_resource type="Animation" uid="uid://da5fufkopn3q6" path="res://decorations/door/anims/open.res" id="3_7jiq1"]
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qs7lc"]
 _data = {
-"closed": ExtResource("2_2ghnm"),
-"open": ExtResource("3_7jiq1")
+&"closed": ExtResource("2_2ghnm"),
+&"open": ExtResource("3_7jiq1")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_6ywul"]

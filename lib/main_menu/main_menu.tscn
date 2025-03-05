@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://cf0bmp8k4qm1n"]
 
-[ext_resource type="Script" path="res://lib/main_menu/main_menu.gd" id="1_jagjv"]
+[ext_resource type="Script" uid="uid://xt0ncvjpqrml" path="res://lib/main_menu/main_menu.gd" id="1_jagjv"]
 [ext_resource type="Texture2D" uid="uid://c0a8u0208c30m" path="res://generic/textures/film_grain.jpg" id="2_8eqi1"]
 [ext_resource type="Texture2D" uid="uid://duigeleeyist" path="res://generic/textures/koru.png" id="2_g05lm"]
 [ext_resource type="Texture2D" uid="uid://di4tqbaloy431" path="res://generic/textures/light_ray.png" id="3_nclce"]
@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://cobebuy8rmele" path="res://lib/ui_container/textures/close_button.png" id="10_cqy1t"]
 [ext_resource type="Texture2D" uid="uid://o8pey70yoybj" path="res://lib/ui_container/textures/close_button_hover.png" id="11_ctlnu"]
 [ext_resource type="PackedScene" uid="uid://d33ilqq0c1mwg" path="res://lib/main_menu/new_game_container.tscn" id="12_0oh4d"]
-[ext_resource type="Script" path="res://lib/hud/version.gd" id="14_n67d6"]
+[ext_resource type="Script" uid="uid://dqfkmf5a2egvp" path="res://lib/hud/version.gd" id="14_n67d6"]
 [ext_resource type="AudioStream" uid="uid://cmphyt1yte74c" path="res://generic/sounds/swish.ogg" id="19_lck14"]
 
 [sub_resource type="Curve" id="Curve_2imnw"]
@@ -246,10 +246,10 @@ scale = Vector2(0.57, 0.57)
 [node name="Motes" type="GPUParticles2D" parent="TitleCard"]
 position = Vector2(0, 416)
 amount = 16
-process_material = SubResource("ParticleProcessMaterial_0vfhr")
 texture = ExtResource("9_g8hmh")
 lifetime = 4.0
 preprocess = 5.0
+process_material = SubResource("ParticleProcessMaterial_0vfhr")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_or2me")

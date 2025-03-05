@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=10 format=3 uid="uid://dvqr8ygkly1kc"]
 
-[ext_resource type="Shader" path="res://lib/crumb/dragonvoid/materials/shaders/shader_dragonvoid.gdshader" id="1_jdvhu"]
+[ext_resource type="Shader" uid="uid://gidkvfvrxu1j" path="res://lib/crumb/dragonvoid/materials/shaders/shader_dragonvoid.gdshader" id="1_jdvhu"]
 [ext_resource type="Texture2D" uid="uid://dk0ymwv1mxvmv" path="res://lib/crumb/dragonvoid/materials/textures/iridescent_diff.jpg" id="2_8igsk"]
 
 [sub_resource type="Gradient" id="Gradient_tl57f"]
@@ -32,9 +32,9 @@ gradient = SubResource("Gradient_qnsu5")
 [resource]
 render_priority = 2
 shader = ExtResource("1_jdvhu")
-shader_parameter/speed = 0.21
-shader_parameter/exponent = 1.0
 shader_parameter/v_gradient_texture = SubResource("GradientTexture2D_vsucu")
 shader_parameter/h_gradient_texture = SubResource("GradientTexture2D_32l0i")
 shader_parameter/smoke_texture = SubResource("NoiseTexture2D_axcn4")
 shader_parameter/albedo_texture = ExtResource("2_8igsk")
+shader_parameter/speed = 0.21
+shader_parameter/exponent = 1.0

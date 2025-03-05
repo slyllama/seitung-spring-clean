@@ -1,3 +1,4 @@
+@tool
 extends "res://lib/gadget/gadget.gd"
 
 const AttenuatorUI = preload("res://lib/attenuator/attenuator.tscn")
@@ -14,6 +15,7 @@ func proc_story() -> void:
 
 func _ready() -> void:
 	super()
+	if Engine.is_editor_hint(): return
 	Save.story_advanced.connect(proc_story)
 	proc_story()
 	

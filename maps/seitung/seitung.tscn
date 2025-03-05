@@ -1,7 +1,7 @@
 [gd_scene load_steps=98 format=3 uid="uid://bi0vh5e03n4ri"]
 
 [ext_resource type="PackedScene" uid="uid://djua7a6d1wk2x" path="res://lib/map/map.tscn" id="1_uym6y"]
-[ext_resource type="Script" path="res://maps/seitung/seitung.gd" id="2_7lwj0"]
+[ext_resource type="Script" uid="uid://dkwr4scds44fq" path="res://maps/seitung/seitung.gd" id="2_7lwj0"]
 [ext_resource type="Environment" uid="uid://pkvuagid82dc" path="res://maps/seitung/seitung_day.tres" id="3_e4u8p"]
 [ext_resource type="PackedScene" uid="uid://dm88qsqr4e6bj" path="res://lib/crumb/weed.tscn" id="5_e2aho"]
 [ext_resource type="PackedScene" uid="uid://1f5jt3pugxvq" path="res://lib/crumb/bug_swarm.tscn" id="7_gcgfd"]
@@ -50,7 +50,7 @@
 [ext_resource type="PackedScene" uid="uid://uy3wjjetlcms" path="res://decorations/lighting/deco_indoor_lamp.tscn" id="29_32tvc"]
 [ext_resource type="PackedScene" uid="uid://do3fcqudbcd2x" path="res://decorations/light_ray/deco_light_ray.tscn" id="32_2oif6"]
 [ext_resource type="PackedScene" uid="uid://c6tcsp348wkyd" path="res://decorations/door/deco_door.tscn" id="34_oct38"]
-[ext_resource type="Shader" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="35_42aun"]
+[ext_resource type="Shader" uid="uid://b5ky3ygok7rsx" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="35_42aun"]
 [ext_resource type="PackedScene" uid="uid://cknccdf2rvyk8" path="res://lib/crumb/dragonvoid.tscn" id="35_f6q0j"]
 [ext_resource type="ArrayMesh" uid="uid://cpad8aq71wjk" path="res://maps/seitung/meshes/_star.res" id="36_47sat"]
 [ext_resource type="PackedScene" uid="uid://dgxqwx2186efc" path="res://decorations/flower_patch/deco_blue_flowers.tscn" id="37_wlchm"]
@@ -120,9 +120,9 @@ fill_from = Vector2(1, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4p88s"]
 render_priority = 1
 shader = ExtResource("35_42aun")
+shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/uv_scale = Vector2(1, 0.5)
 shader_parameter/albedo = Color(0.3, 1, 0.3, 1)
-shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/x_gradient_texture = SubResource("GradientTexture2D_vc8yf")
 shader_parameter/y_gradient_texture = SubResource("GradientTexture2D_1ijhh")
 

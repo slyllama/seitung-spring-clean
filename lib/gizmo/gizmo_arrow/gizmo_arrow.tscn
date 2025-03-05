@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://cs1adbapshsfb"]
 
-[ext_resource type="Script" path="res://lib/gizmo/gizmo_arrow/gizmo_arrow.gd" id="1_xynbh"]
+[ext_resource type="Script" uid="uid://bspyi4cpdqwob" path="res://lib/gizmo/gizmo_arrow/gizmo_arrow.gd" id="1_xynbh"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_gc747"]
 [ext_resource type="ArrayMesh" uid="uid://burxoykeai0o5" path="res://lib/gizmo/gizmo_arrow/meshes/arrow_meshes_arrow_translate.res" id="3_i53jx"]
 [ext_resource type="AudioStream" uid="uid://bo5xhvyr6p7il" path="res://generic/sounds/tick.ogg" id="4_b115f"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bmojvv0uuoe8b"]
 
 [ext_resource type="PackedScene" uid="uid://rwpbhnk3wju3" path="res://decorations/roof_piece/roof_piece.glb" id="1_cf85i"]
-[ext_resource type="Script" path="res://decorations/roof_piece/roof_piece_base.gd" id="1_jbwxk"]
+[ext_resource type="Script" uid="uid://buxvvg1vl3sng" path="res://decorations/roof_piece/roof_piece_base.gd" id="1_jbwxk"]
 
 [node name="RoofPieceBase" type="Node3D"]
 script = ExtResource("1_jbwxk")

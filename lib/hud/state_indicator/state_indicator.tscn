@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://fx684833x53q"]
 
 [ext_resource type="Texture2D" uid="uid://ccrjdhca3foth" path="res://lib/hud/state_indicator/textures/hud_ornament.png" id="1_38xo4"]
-[ext_resource type="Script" path="res://lib/hud/state_indicator/state_indicator.gd" id="1_wu1av"]
+[ext_resource type="Script" uid="uid://baykias8ik5d5" path="res://lib/hud/state_indicator/state_indicator.gd" id="1_wu1av"]
 
 [sub_resource type="Animation" id="Animation_ejeh3"]
 length = 0.001
@@ -38,8 +38,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_syp8u"]
 _data = {
-"RESET": SubResource("Animation_ejeh3"),
-"pulse": SubResource("Animation_i0gw8")
+&"RESET": SubResource("Animation_ejeh3"),
+&"pulse": SubResource("Animation_i0gw8")
 }
 
 [node name="StateIndicator" type="CanvasLayer"]

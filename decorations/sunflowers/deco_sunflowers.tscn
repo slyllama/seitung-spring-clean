@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://uv2onprni5ok"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_abjya"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_abjya"]
 [ext_resource type="PackedScene" uid="uid://ctkq17a73n1qa" path="res://decorations/sunflowers/sunflowers.glb" id="2_4elbt"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y32c4"]

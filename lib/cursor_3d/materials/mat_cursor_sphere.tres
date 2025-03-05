@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://c4px02oqun08"]
 
-[ext_resource type="Shader" path="res://lib/cursor_3d/materials/shaders/shader_cursor_sphere.gdshader" id="1_soohf"]
+[ext_resource type="Shader" uid="uid://doqm0svh412np" path="res://lib/cursor_3d/materials/shaders/shader_cursor_sphere.gdshader" id="1_soohf"]
 
 [sub_resource type="Gradient" id="Gradient_2ic5o"]
 offsets = PackedFloat32Array(0.5, 0.7)
@@ -13,5 +13,5 @@ gradient = SubResource("Gradient_2ic5o")
 render_priority = 0
 shader = ExtResource("1_soohf")
 shader_parameter/fresnel_amount = 6.0
-shader_parameter/albedo = null
+shader_parameter/albedo = Color(0, 0, 0, 1)
 shader_parameter/gradient_texture = SubResource("GradientTexture2D_td4oe")

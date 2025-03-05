@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://fdtci72jf3pk"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_lcn0t"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_lcn0t"]
 [ext_resource type="AudioStream" uid="uid://qs8mrppeh6he" path="res://maps/seitung/sounds/fountain.ogg" id="3_fgfut"]
 [ext_resource type="ArrayMesh" uid="uid://dgp0r5exp3ebw" path="res://maps/seitung/meshes/_bamboo.res" id="4_07111"]
 [ext_resource type="PackedScene" uid="uid://vqd44whxclb3" path="res://decorations/fountain/fountain.glb" id="5_volr7"]
 [ext_resource type="PackedScene" uid="uid://bt4skwxifwah0" path="res://decorations/lantern/lantern.glb" id="6_4686x"]
 [ext_resource type="PackedScene" uid="uid://bvsqlumwkla0v" path="res://decorations/fountain/water_splash/water_splash.tscn" id="6_rhmsy"]
 [ext_resource type="ArrayMesh" uid="uid://d0p7bn635jl63" path="res://maps/seitung/meshes/_flower_1.res" id="7_8v73e"]
-[ext_resource type="Script" path="res://lib/foliage_spawner/foliage_spawner.gd" id="8_w5pib"]
+[ext_resource type="Script" uid="uid://xov275jp0sjg" path="res://lib/foliage_spawner/foliage_spawner.gd" id="8_w5pib"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r2dfd"]
 size = Vector3(5.03882, 1.21259, 5.14551)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://np0dx7q0lxai"]
 
-[ext_resource type="Script" path="res://lib/settings_handler/settings_pane/settings_slider.gd" id="1_dwb46"]
+[ext_resource type="Script" uid="uid://e8q6l7xtnqjt" path="res://lib/settings_handler/settings_pane/settings_slider.gd" id="1_dwb46"]
 
 [node name="SettingsSlider" type="HBoxContainer"]
 custom_minimum_size = Vector2(200, 20)

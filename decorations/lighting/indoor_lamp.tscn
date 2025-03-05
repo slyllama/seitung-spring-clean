@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://go4xeg1ay4kq"]
 
 [ext_resource type="Material" uid="uid://ihoir867mar" path="res://lib/player/materials/mat_jade.tres" id="1_lj4vv"]
-[ext_resource type="Script" path="res://decorations/lighting/indoor_lamp.gd" id="2_3dpfb"]
+[ext_resource type="Script" uid="uid://d2j80uxxep5pm" path="res://decorations/lighting/indoor_lamp.gd" id="2_3dpfb"]
 
 [node name="IndoorLamp" type="CSGSphere3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)

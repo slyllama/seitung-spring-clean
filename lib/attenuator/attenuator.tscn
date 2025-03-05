@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=3 uid="uid://b5rqfmavxpqcy"]
 
-[ext_resource type="Script" path="res://lib/attenuator/attenuator.gd" id="1_3up0s"]
+[ext_resource type="Script" uid="uid://d08cu1ganf8f0" path="res://lib/attenuator/attenuator.gd" id="1_3up0s"]
 [ext_resource type="Texture2D" uid="uid://blrm1hl1lltu4" path="res://lib/attenuator/textures/base.png" id="2_3yp7v"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_qd7v5"]
 [ext_resource type="PackedScene" uid="uid://d070iet1hdc2c" path="res://lib/fishing/dispulsion_fx/dispulsion_fx.tscn" id="3_dgqi3"]
@@ -13,13 +13,13 @@
 [ext_resource type="AudioStream" uid="uid://bjdutdjfx2x1v" path="res://lib/ui_container/sounds/click.ogg" id="10_r8x0m"]
 [ext_resource type="Texture2D" uid="uid://c6bptaa3p8mka" path="res://lib/attenuator/textures/energy_effects.png" id="12_a26c3"]
 [ext_resource type="Texture2D" uid="uid://dcyqub4vhl6r4" path="res://lib/attenuator/textures/arrow.png" id="12_ceq7c"]
-[ext_resource type="Shader" path="res://lib/attenuator/materials/shaders/shader_energy_wobble.gdshader" id="12_tj5i4"]
+[ext_resource type="Shader" uid="uid://baylm08nni5b8" path="res://lib/attenuator/materials/shaders/shader_energy_wobble.gdshader" id="12_tj5i4"]
 [ext_resource type="Texture2D" uid="uid://n0dr8y0nclty" path="res://lib/dragger/materials/textures/paint_mask.png" id="13_dfsye"]
 [ext_resource type="Texture2D" uid="uid://cknjydpsd20w8" path="res://lib/attenuator/textures/dragon.png" id="13_oio82"]
 [ext_resource type="Texture2D" uid="uid://cf7ril0yniapq" path="res://lib/attenuator/textures/arrow_hover.png" id="13_yshcl"]
 [ext_resource type="AudioStream" uid="uid://comrowg2td5v1" path="res://generic/sounds/disabled.ogg" id="14_e0ud8"]
 [ext_resource type="Texture2D" uid="uid://bggnkyljip2sf" path="res://lib/attenuator/textures/arrow_disabled.png" id="14_q6c1q"]
-[ext_resource type="Script" path="res://lib/attenuator/dragon_indicator.gd" id="15_k3slj"]
+[ext_resource type="Script" uid="uid://c4pxwiaqui7cg" path="res://lib/attenuator/dragon_indicator.gd" id="15_k3slj"]
 [ext_resource type="AudioStream" uid="uid://p27he2puiuwj" path="res://lib/attenuator/sounds/attenuator_success.ogg" id="15_vld85"]
 [ext_resource type="Texture2D" uid="uid://j2u6itfbl3mi" path="res://lib/attenuator/textures/glyphs/jormag.png" id="16_qdpey"]
 
@@ -34,19 +34,19 @@ noise = SubResource("FastNoiseLite_f2x6f")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eisi1"]
 shader = ExtResource("12_tj5i4")
+shader_parameter/noise = SubResource("NoiseTexture2D_pyaki")
 shader_parameter/dissolve_value = 1.0
 shader_parameter/wobble_scale = 0.45
 shader_parameter/strength = 0.4
 shader_parameter/color = Color(1, 1, 1, 1)
-shader_parameter/noise = SubResource("NoiseTexture2D_pyaki")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2ti8g"]
 shader = ExtResource("12_tj5i4")
+shader_parameter/noise = ExtResource("13_dfsye")
 shader_parameter/dissolve_value = 1.0
 shader_parameter/wobble_scale = 0.1
 shader_parameter/strength = 0.03
 shader_parameter/color = Color(0.75, 0.75, 0.75, 1)
-shader_parameter/noise = ExtResource("13_dfsye")
 
 [node name="Attenuator" type="CanvasLayer"]
 script = ExtResource("1_3up0s")

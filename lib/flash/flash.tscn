@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c81cem1j5p302"]
 
 [ext_resource type="Texture2D" uid="uid://cd4umilkvrff0" path="res://lib/flash/textures/highlight.png" id="1_8sem1"]
-[ext_resource type="Script" path="res://lib/flash/flash.gd" id="1_grg7c"]
+[ext_resource type="Script" uid="uid://daupim2x1yofo" path="res://lib/flash/flash.gd" id="1_grg7c"]
 
 [sub_resource type="Animation" id="Animation_ivvn6"]
 length = 0.001
@@ -156,8 +156,8 @@ tracks/5/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4lla6"]
 _data = {
-"RESET": SubResource("Animation_ivvn6"),
-"flash": SubResource("Animation_6tkx8")
+&"RESET": SubResource("Animation_ivvn6"),
+&"flash": SubResource("Animation_6tkx8")
 }
 
 [node name="Flash" type="Node2D"]

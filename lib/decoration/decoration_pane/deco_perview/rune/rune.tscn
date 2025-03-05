@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dwrrj0ukov0ov"]
 
-[ext_resource type="Shader" path="res://lib/decoration/decoration_pane/deco_perview/rune/materials/shaders/shader_rune.gdshader" id="1_60ebf"]
+[ext_resource type="Shader" uid="uid://mqpm5k6j45j" path="res://lib/decoration/decoration_pane/deco_perview/rune/materials/shaders/shader_rune.gdshader" id="1_60ebf"]
 [ext_resource type="Texture2D" uid="uid://26pkai7we4x0" path="res://lib/decoration/decoration_pane/deco_perview/rune/materials/textures/rune.png" id="2_ivc8h"]
 
 [sub_resource type="Gradient" id="Gradient_3fr2i"]

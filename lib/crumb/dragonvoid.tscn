@@ -1,10 +1,10 @@
 [gd_scene load_steps=18 format=3 uid="uid://cknccdf2rvyk8"]
 
-[ext_resource type="Script" path="res://lib/crumb/dragonvoid.gd" id="1_xg3mb"]
+[ext_resource type="Script" uid="uid://bkx8lboxxoeyx" path="res://lib/crumb/dragonvoid.gd" id="1_xg3mb"]
 [ext_resource type="PackedScene" uid="uid://dufx2yeippqey" path="res://lib/crumb/dragonvoid/meshes/dragonvoid_arc.glb" id="2_xs588"]
 [ext_resource type="Texture2D" uid="uid://dagbhjhvtaxvn" path="res://generic/textures/mote.png" id="3_s6v0a"]
 [ext_resource type="PackedScene" uid="uid://cgr6iytjeuj80" path="res://lib/crumb/bug_swarm/visual_area.tscn" id="3_ytxy4"]
-[ext_resource type="Shader" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="4_05r8m"]
+[ext_resource type="Shader" uid="uid://b457fsj08hjic" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="4_05r8m"]
 [ext_resource type="Texture2D" uid="uid://bdl3ocb44powe" path="res://lib/hud/screen_effects/textures/splatter_mask.jpg" id="5_1sw7g"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="6_hdk5x"]
 [ext_resource type="Texture2D" uid="uid://b1cawde2nbycs" path="res://generic/textures/collection_icon.png" id="8_l0y0y"]
@@ -59,14 +59,14 @@ fill_to = Vector2(0, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ci2t0"]
 render_priority = 2
 shader = ExtResource("4_05r8m")
+shader_parameter/mask_texture = ExtResource("5_1sw7g")
+shader_parameter/vertical_mask = SubResource("GradientTexture2D_a4aqi")
 shader_parameter/color = Color(0, 0, 0, 1)
 shader_parameter/uv_scale = Vector2(3.6, 0.43)
 shader_parameter/exponent = 0.1
 shader_parameter/time_scale = 0.07
-shader_parameter/distance_fade_min = null
-shader_parameter/distance_fade_max = null
-shader_parameter/mask_texture = ExtResource("5_1sw7g")
-shader_parameter/vertical_mask = SubResource("GradientTexture2D_a4aqi")
+shader_parameter/distance_fade_min = 0.0
+shader_parameter/distance_fade_max = 0.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_3fip3"]
 material = SubResource("ShaderMaterial_ci2t0")

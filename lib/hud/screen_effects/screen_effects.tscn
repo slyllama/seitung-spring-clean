@@ -1,18 +1,18 @@
 [gd_scene load_steps=14 format=3 uid="uid://c6kvxy3mhfso3"]
 
 [ext_resource type="Texture2D" uid="uid://be87557001j28" path="res://lib/hud/screen_effects/textures/bug_overlay.png" id="1_5cg80"]
-[ext_resource type="Shader" path="res://lib/hud/screen_effects/shaders/shader_screen_fx.gdshader" id="1_diqkw"]
-[ext_resource type="Script" path="res://lib/hud/screen_effects/screen_effects.gd" id="1_momb4"]
+[ext_resource type="Shader" uid="uid://dkxopdas1lurj" path="res://lib/hud/screen_effects/shaders/shader_screen_fx.gdshader" id="1_diqkw"]
+[ext_resource type="Script" uid="uid://xp7aw20v2k7g" path="res://lib/hud/screen_effects/screen_effects.gd" id="1_momb4"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_hbd12"]
 [ext_resource type="Texture2D" uid="uid://bdl3ocb44powe" path="res://lib/hud/screen_effects/textures/splatter_mask.jpg" id="2_sv67w"]
 [ext_resource type="Texture2D" uid="uid://wjxdrde88kpf" path="res://lib/hud/screen_effects/textures/dragonvoid_overlay.png" id="6_ln4dv"]
-[ext_resource type="Shader" path="res://lib/hud/screen_effects/shaders/shader_anime.gdshader" id="7_c2qk6"]
+[ext_resource type="Shader" uid="uid://dqerurkqaxx8j" path="res://lib/hud/screen_effects/shaders/shader_anime.gdshader" id="7_c2qk6"]
 [ext_resource type="Texture2D" uid="uid://pcdu4s7kntsv" path="res://lib/hud/screen_effects/textures/anime.png" id="7_uiyq1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kp0xq"]
 shader = ExtResource("1_diqkw")
-shader_parameter/alpha_exponent = 1.0
 shader_parameter/swirl_texture = ExtResource("2_sv67w")
+shader_parameter/alpha_exponent = 1.0
 
 [sub_resource type="Gradient" id="Gradient_e2og7"]
 
@@ -26,9 +26,9 @@ noise = SubResource("FastNoiseLite_f5umt")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hynki"]
 shader = ExtResource("7_c2qk6")
-shader_parameter/modulate_a = 0.0
 shader_parameter/noise = SubResource("NoiseTexture2D_6q7g2")
 shader_parameter/anime_texture = ExtResource("7_uiyq1")
+shader_parameter/modulate_a = 0.0
 
 [node name="ScreenEffects" type="CanvasLayer"]
 script = ExtResource("1_momb4")

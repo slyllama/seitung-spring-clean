@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://fqasq1ggshha"]
 
-[ext_resource type="Script" path="res://lib/loader/loader.gd" id="1_kyod5"]
+[ext_resource type="Script" uid="uid://wj5vfifxsfaf" path="res://lib/loader/loader.gd" id="1_kyod5"]
 [ext_resource type="Texture2D" uid="uid://c0a8u0208c30m" path="res://generic/textures/film_grain.jpg" id="2_qx7v1"]
 [ext_resource type="Texture2D" uid="uid://duigeleeyist" path="res://generic/textures/koru.png" id="2_stjvc"]
 [ext_resource type="Texture2D" uid="uid://cvd1gsf601dea" path="res://lib/loader/textures/spinner.png" id="5_tj3c3"]

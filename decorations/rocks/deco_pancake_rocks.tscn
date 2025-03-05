@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://qw6dxj43jndf"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_j01fy"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_j01fy"]
 [ext_resource type="Texture2D" uid="uid://cy52qmdusmtrs" path="res://maps/seitung/textures/rocks_decal.png" id="2_mhdjp"]
 [ext_resource type="PackedScene" uid="uid://cugqflilfm1ps" path="res://decorations/rocks/pancake_rocks.glb" id="3_sve6d"]
 

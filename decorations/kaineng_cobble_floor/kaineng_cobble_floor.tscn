@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1lbsu5bpomt7"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_wiwg7"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_wiwg7"]
 [ext_resource type="PackedScene" uid="uid://ba3m7l27rxsvc" path="res://decorations/kaineng_cobble_floor/kaineng_cobble_floor.glb" id="2_c0x23"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x16ww"]

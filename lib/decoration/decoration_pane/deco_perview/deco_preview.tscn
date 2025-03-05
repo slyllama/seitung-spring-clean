@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://c4hdvgok1lsmq"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration_pane/deco_perview/deco_preview.gd" id="1_ylfot"]
+[ext_resource type="Script" uid="uid://b1yxlbpbx0t3k" path="res://lib/decoration/decoration_pane/deco_perview/deco_preview.gd" id="1_ylfot"]
 [ext_resource type="PackedScene" uid="uid://dwrrj0ukov0ov" path="res://lib/decoration/decoration_pane/deco_perview/rune/rune.tscn" id="3_wifgh"]
 [ext_resource type="Texture2D" uid="uid://dagbhjhvtaxvn" path="res://generic/textures/mote.png" id="5_m0vr7"]
 
@@ -99,15 +99,15 @@ load_path = "res://.godot/imported/grass_base_diff.jpg-671630e1b73b22edad8750846
 render_priority = 0
 shader = SubResource("Shader_e2vv8")
 shader_parameter/uv_scale = 16.0
-shader_parameter/grass_base_multiplier = 0.2
-shader_parameter/normal_strength = 1.0
-shader_parameter/grass_add_multiplier = 0.14
 shader_parameter/grass_texture_base = SubResource("CompressedTexture2D_2ipm5")
 shader_parameter/grass_texture_add = SubResource("CompressedTexture2D_f68cj")
 shader_parameter/grass_normal_texture = SubResource("CompressedTexture2D_t6j0b")
 shader_parameter/blend_noise_texture = SubResource("NoiseTexture2D_fjivs")
 shader_parameter/dirt_texture = SubResource("CompressedTexture2D_0rf7j")
 shader_parameter/dirt_mask_texture = SubResource("NoiseTexture2D_3fwdj")
+shader_parameter/grass_base_multiplier = 0.2
+shader_parameter/normal_strength = 1.0
+shader_parameter/grass_add_multiplier = 0.14
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uh8ht"]
 material = SubResource("ShaderMaterial_4iv0s")

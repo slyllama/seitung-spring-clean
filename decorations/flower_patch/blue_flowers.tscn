@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bat3tbsj0n1fi"]
 
 [ext_resource type="ArrayMesh" uid="uid://d0p7bn635jl63" path="res://maps/seitung/meshes/_flower_1.res" id="1_yvce8"]
-[ext_resource type="Script" path="res://lib/foliage_spawner/foliage_spawner.gd" id="2_cf8g2"]
+[ext_resource type="Script" uid="uid://xov275jp0sjg" path="res://lib/foliage_spawner/foliage_spawner.gd" id="2_cf8g2"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_20je6"]
 transform_format = 1

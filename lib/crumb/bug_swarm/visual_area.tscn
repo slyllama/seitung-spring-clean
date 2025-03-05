@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cgr6iytjeuj80"]
 
-[ext_resource type="Shader" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="1_0crl3"]
+[ext_resource type="Shader" uid="uid://b457fsj08hjic" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="1_0crl3"]
 [ext_resource type="Texture2D" uid="uid://bdl3ocb44powe" path="res://lib/hud/screen_effects/textures/splatter_mask.jpg" id="2_qx0md"]
 
 [sub_resource type="Gradient" id="Gradient_pqiau"]
@@ -14,14 +14,14 @@ fill_to = Vector2(0, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bcdkn"]
 render_priority = 2
 shader = ExtResource("1_0crl3")
-shader_parameter/color = null
+shader_parameter/mask_texture = ExtResource("2_qx0md")
+shader_parameter/vertical_mask = SubResource("GradientTexture2D_e28v7")
+shader_parameter/color = Color(0, 0, 0, 1)
 shader_parameter/uv_scale = Vector2(3.6, 3.6)
 shader_parameter/exponent = 2.0
 shader_parameter/time_scale = 0.07
-shader_parameter/distance_fade_min = null
-shader_parameter/distance_fade_max = null
-shader_parameter/mask_texture = ExtResource("2_qx0md")
-shader_parameter/vertical_mask = SubResource("GradientTexture2D_e28v7")
+shader_parameter/distance_fade_min = 0.0
+shader_parameter/distance_fade_max = 0.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_f8np1"]
 material = SubResource("ShaderMaterial_bcdkn")

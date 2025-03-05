@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://uy3wjjetlcms"]
 
-[ext_resource type="Script" path="res://decorations/lighting/deco_indoor_lamp.gd" id="1_kbgfi"]
+[ext_resource type="Script" uid="uid://cvy6fqt1ac4kc" path="res://decorations/lighting/deco_indoor_lamp.gd" id="1_kbgfi"]
 [ext_resource type="PackedScene" uid="uid://go4xeg1ay4kq" path="res://decorations/lighting/indoor_lamp.tscn" id="2_73iu0"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_d4be6"]

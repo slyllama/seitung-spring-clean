@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqap4iq7iwa03"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_u43m8"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_u43m8"]
 [ext_resource type="PackedScene" uid="uid://d3fe4cn4t2050" path="res://maps/seitung/meshes/small_boulders.glb" id="2_xgqeo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8dpfd"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://gokqv1eo16nh"]
 
-[ext_resource type="Script" path="res://lib/hud/side_panel/side_panel.gd" id="1_xy7kn"]
-[ext_resource type="Shader" path="res://lib/hud/side_panel/materials/shaders/shader_panel_gradient.gdshader" id="2_xwfhn"]
+[ext_resource type="Script" uid="uid://sqdfptdkccmu" path="res://lib/hud/side_panel/side_panel.gd" id="1_xy7kn"]
+[ext_resource type="Shader" uid="uid://5ujpsqsvjdwa" path="res://lib/hud/side_panel/materials/shaders/shader_panel_gradient.gdshader" id="2_xwfhn"]
 [ext_resource type="Texture2D" uid="uid://cmq3a01pn8uh1" path="res://lib/hud/side_panel/materials/textures/side_panel_gradient.tres" id="3_0npe3"]
 [ext_resource type="PackedScene" uid="uid://yrtnqwevr314" path="res://lib/hud/side_panel/panel_progress.tscn" id="4_7d8f4"]
 [ext_resource type="Texture2D" uid="uid://dkitt5cq2opmq" path="res://lib/hud/side_panel/materials/textures/story_sidebar_gradient.tres" id="5_qmfye"]

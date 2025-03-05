@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkuds30etmrba"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_r6i2u"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_r6i2u"]
 [ext_resource type="PackedScene" uid="uid://cy3b7ory3l02t" path="res://decorations/roof_corner/roof_corner.glb" id="2_rmaen"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4s0t5"]

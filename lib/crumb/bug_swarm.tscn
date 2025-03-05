@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://1f5jt3pugxvq"]
 
-[ext_resource type="Script" path="res://lib/crumb/bug_swarm.gd" id="1_5hoe5"]
+[ext_resource type="Script" uid="uid://debb512tkdr7v" path="res://lib/crumb/bug_swarm.gd" id="1_5hoe5"]
 [ext_resource type="PackedScene" uid="uid://dcbfj3c5m2l7k" path="res://lib/crumb/bug_swarm/bug_swarm_prop.tscn" id="2_y2aqg"]
 [ext_resource type="AudioStream" uid="uid://c1ird7hemm8dx" path="res://generic/sounds/bees.ogg" id="3_xdlj6"]
 [ext_resource type="AudioStream" uid="uid://dkwmkdrs70047" path="res://lib/crumb/bug_swarm/sounds/bug_sounds.ogg" id="4_1u0f8"]
 [ext_resource type="PackedScene" uid="uid://cgr6iytjeuj80" path="res://lib/crumb/bug_swarm/visual_area.tscn" id="5_43y53"]
-[ext_resource type="Shader" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="6_0grca"]
+[ext_resource type="Shader" uid="uid://b457fsj08hjic" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="6_0grca"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="6_oqvb8"]
 [ext_resource type="AudioStream" uid="uid://comrowg2td5v1" path="res://generic/sounds/disabled.ogg" id="7_7hclb"]
 [ext_resource type="Texture2D" uid="uid://bdl3ocb44powe" path="res://lib/hud/screen_effects/textures/splatter_mask.jpg" id="7_kbu2g"]
@@ -21,14 +21,14 @@ fill_to = Vector2(0, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ugaig"]
 render_priority = 2
 shader = ExtResource("6_0grca")
+shader_parameter/mask_texture = ExtResource("7_kbu2g")
+shader_parameter/vertical_mask = SubResource("GradientTexture2D_e28v7")
 shader_parameter/color = Color(1, 1, 1, 1)
 shader_parameter/uv_scale = Vector2(3.6, 0.43)
 shader_parameter/exponent = 2.4
 shader_parameter/time_scale = 0.07
-shader_parameter/distance_fade_min = null
-shader_parameter/distance_fade_max = null
-shader_parameter/mask_texture = ExtResource("7_kbu2g")
-shader_parameter/vertical_mask = SubResource("GradientTexture2D_e28v7")
+shader_parameter/distance_fade_min = 0.0
+shader_parameter/distance_fade_max = 0.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_brwlh"]
 material = SubResource("ShaderMaterial_ugaig")

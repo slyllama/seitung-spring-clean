@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cgp46dhfkb28c"]
 
-[ext_resource type="Script" path="res://lib/attenuator/piano_key.gd" id="1_305wr"]
+[ext_resource type="Script" uid="uid://cb6ck8xqunayt" path="res://lib/attenuator/piano_key.gd" id="1_305wr"]
 [ext_resource type="AudioStream" uid="uid://d3hlc87gf58h" path="res://lib/attenuator/sounds/note.ogg" id="1_ylbsu"]
 [ext_resource type="Texture2D" uid="uid://dboepuijf7bys" path="res://lib/attenuator/textures/piano_key.png" id="3_1jv21"]
 [ext_resource type="Texture2D" uid="uid://dqlbjn82webhf" path="res://lib/attenuator/textures/notes/note_empty.png" id="3_prjrj"]

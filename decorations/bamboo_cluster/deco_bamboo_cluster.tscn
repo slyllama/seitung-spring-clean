@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://btxknagn4foj1"]
 
-[ext_resource type="Script" path="res://decorations/bamboo_cluster/deco_bamboo_cluster.gd" id="1_tj73h"]
+[ext_resource type="Script" uid="uid://hb5abm0uiucu" path="res://decorations/bamboo_cluster/deco_bamboo_cluster.gd" id="1_tj73h"]
 [ext_resource type="ArrayMesh" uid="uid://dgp0r5exp3ebw" path="res://maps/seitung/meshes/_bamboo.res" id="2_ys530"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8w3i2"]

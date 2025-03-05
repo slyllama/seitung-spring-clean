@@ -1,3 +1,4 @@
+@tool
 extends Decoration
 
 func _ready() -> void:

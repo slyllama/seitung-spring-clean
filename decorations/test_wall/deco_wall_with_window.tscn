@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdc04bpiejlqc"]
 
-[ext_resource type="Script" path="res://decorations/test_wall/deco_test_wall.gd" id="1_ry2n0"]
+[ext_resource type="Script" uid="uid://t6eybuhdn6ac" path="res://decorations/test_wall/deco_test_wall.gd" id="1_ry2n0"]
 [ext_resource type="PackedScene" uid="uid://livylimc6kil" path="res://decorations/test_wall/wall_with_window.glb" id="3_7408g"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rp7by"]

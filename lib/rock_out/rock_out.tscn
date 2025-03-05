@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://kt2evf8a1gsv"]
 
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="1_2gdrv"]
-[ext_resource type="Script" path="res://lib/rock_out/rock_out.gd" id="1_rsuif"]
+[ext_resource type="Script" uid="uid://c34k7jkret74a" path="res://lib/rock_out/rock_out.gd" id="1_rsuif"]
 [ext_resource type="AudioStream" uid="uid://da5v7k0qy61xp" path="res://lib/rock_out/sounds/cat_jam.ogg" id="2_n01t8"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_6grtn"]

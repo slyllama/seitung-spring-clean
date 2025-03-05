@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ce63nsqck1wbc"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_ssec3"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_ssec3"]
 [ext_resource type="PackedScene" uid="uid://d2a2ptt0rqp1i" path="res://maps/seitung/props/stucco_wall/plaster_wall.glb" id="2_s8bu5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ma6rx"]

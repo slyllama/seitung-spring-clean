@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bxyq3hqxr2k7u"]
 
-[ext_resource type="Script" path="res://lib/bindings/key_ui.gd" id="1_lrqo7"]
+[ext_resource type="Script" uid="uid://eclw1wcy438i" path="res://lib/bindings/key_ui.gd" id="1_lrqo7"]
 
 [node name="KeyUI" type="HBoxContainer"]
 custom_minimum_size = Vector2(0, 24)

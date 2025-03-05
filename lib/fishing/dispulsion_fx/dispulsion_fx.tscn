@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://d070iet1hdc2c"]
 
 [ext_resource type="Texture2D" uid="uid://l3427bws2aju" path="res://lib/fishing/dispulsion_fx/textures/inner_circle.png" id="1_it5o2"]
-[ext_resource type="Script" path="res://lib/fishing/dispulsion_fx/dispulsion_fx.gd" id="1_pvm8o"]
+[ext_resource type="Script" uid="uid://bld4e317mek5m" path="res://lib/fishing/dispulsion_fx/dispulsion_fx.gd" id="1_pvm8o"]
 [ext_resource type="Texture2D" uid="uid://py86v5rcysq6" path="res://lib/fishing/dispulsion_fx/textures/outer_circle.png" id="2_7mvrm"]
 [ext_resource type="Texture2D" uid="uid://ddegp22r0d6kf" path="res://lib/fishing/dispulsion_fx/textures/triangle_1.png" id="4_le431"]
 [ext_resource type="Texture2D" uid="uid://ci3hl2uj0527j" path="res://lib/fishing/dispulsion_fx/textures/triangle_2.png" id="5_5fcu0"]

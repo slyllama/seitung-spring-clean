@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://bh3h8snrh07d5"]
 
 [ext_resource type="PackedScene" uid="uid://cj7uhhiyd58ku" path="res://maps/seitung/meshes/weed_bin.glb" id="1_o4ibe"]
-[ext_resource type="Script" path="res://lib/gadget/weed_bin.gd" id="1_ruw2u"]
+[ext_resource type="Script" uid="uid://cw7y1rq3gm31p" path="res://lib/gadget/weed_bin.gd" id="1_ruw2u"]
 [ext_resource type="PackedScene" uid="uid://dytel2pgikquu" path="res://lib/gadget/gadget.tscn" id="2_ybvcv"]
 [ext_resource type="Texture2D" uid="uid://ctvn0oehf2yjq" path="res://decorations/fountain/water_splash/textures/splash_mask.png" id="4_m5hti"]
 [ext_resource type="Texture2D" uid="uid://b1cawde2nbycs" path="res://generic/textures/collection_icon.png" id="4_r64xk"]
@@ -16,8 +16,7 @@ point_count = 3
 curve = SubResource("Curve_45o2n")
 
 [sub_resource type="Curve" id="Curve_h6orx"]
-min_value = -360.0
-max_value = 360.0
+_limits = [-360.0, 360.0, 0.0, 1.0]
 _data = [Vector2(0, 233.814), 0.0, 0.0, 0, 0, Vector2(1, 18.5567), 0.0, 0.0, 0, 0]
 point_count = 2
 

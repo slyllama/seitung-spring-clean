@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bb7twv1jkyqfa"]
 
-[ext_resource type="Script" path="res://lib/spider/spider.gd" id="1_h1rie"]
+[ext_resource type="Script" uid="uid://co26sfa4m1h4d" path="res://lib/spider/spider.gd" id="1_h1rie"]
 [ext_resource type="Material" uid="uid://d2qy2wq5wk0h1" path="res://lib/xray_mesh/materials/mat_xray.tres" id="1_rf1pk"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="3_xwjh2"]
 

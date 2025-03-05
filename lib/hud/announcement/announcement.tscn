@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bx0omalga0s0k"]
 
-[ext_resource type="Script" path="res://lib/hud/announcement/announcement.gd" id="1_k270b"]
+[ext_resource type="Script" uid="uid://2aq2rxosovt5" path="res://lib/hud/announcement/announcement.gd" id="1_k270b"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_3o001"]
 [ext_resource type="Texture2D" uid="uid://btvrdyrhkcuxb" path="res://lib/hud/announcement/textures/announce_bg.png" id="2_nts8i"]
 

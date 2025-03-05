@@ -1,4 +1,5 @@
 .godot/
+.godot-old/
 build/*
 *.tmp
 bus.tres

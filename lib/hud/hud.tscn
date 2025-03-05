@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://mc7cfdajs4rm"]
 
 [ext_resource type="Texture2D" uid="uid://xv8rsnsaeksv" path="res://generic/textures/corner.png" id="1_8jsj4"]
-[ext_resource type="Script" path="res://lib/hud/hud.gd" id="1_ryxhn"]
+[ext_resource type="Script" uid="uid://cdxce65w6ry4m" path="res://lib/hud/hud.gd" id="1_ryxhn"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_lglf3"]
 [ext_resource type="FontFile" uid="uid://drvjsmav1gcj3" path="res://generic/fonts/ibm_plex_mono.otf" id="2_yply7"]
 [ext_resource type="PackedScene" uid="uid://c6kvxy3mhfso3" path="res://lib/hud/screen_effects/screen_effects.tscn" id="4_m3be7"]
@@ -10,13 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://7s701kqjqy22" path="res://lib/hud/fx_list/fx_list.tscn" id="7_5oqpl"]
 [ext_resource type="PackedScene" uid="uid://gokqv1eo16nh" path="res://lib/hud/side_panel/side_panel.tscn" id="7_6qwis"]
 [ext_resource type="PackedScene" uid="uid://pr2mjxwcnmao" path="res://lib/settings_handler/settings_pane/settings_pane.tscn" id="7_w7sr0"]
-[ext_resource type="Shader" path="res://lib/hud/shaders/shader_canvas_blur.gdshader" id="8_ywpmy"]
+[ext_resource type="Shader" uid="uid://6n5p326kj12k" path="res://lib/hud/shaders/shader_canvas_blur.gdshader" id="8_ywpmy"]
 [ext_resource type="PackedScene" uid="uid://bx0omalga0s0k" path="res://lib/hud/announcement/announcement.tscn" id="9_6p63t"]
 [ext_resource type="PackedScene" uid="uid://bvh87e5dxhdg8" path="res://lib/decoration/decoration_pane/decoration_pane.tscn" id="9_qacaq"]
 [ext_resource type="Texture2D" uid="uid://dgvxowegr8bu3" path="res://lib/hud/side_panel/textures/side_panel_minor_separator.png" id="10_hvlxk"]
 [ext_resource type="Texture2D" uid="uid://dlff8ygba3xfx" path="res://lib/hud/textures/interact_indicator.png" id="14_dlrg2"]
 [ext_resource type="PackedScene" uid="uid://fx684833x53q" path="res://lib/hud/state_indicator/state_indicator.tscn" id="16_s3yhc"]
-[ext_resource type="Script" path="res://lib/hud/version.gd" id="18_0n0fc"]
+[ext_resource type="Script" uid="uid://dqfkmf5a2egvp" path="res://lib/hud/version.gd" id="18_0n0fc"]
 [ext_resource type="Texture2D" uid="uid://bn4mflm3n5emx" path="res://generic/textures/action_cursor.png" id="18_5631a"]
 [ext_resource type="AudioStream" uid="uid://q6mwdov1lvd7" path="res://generic/sounds/interact_enter.ogg" id="20_hhimw"]
 
@@ -180,9 +180,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -114.0
-offset_top = 202.0
+offset_top = 144.0
 offset_right = 114.0
-offset_bottom = 248.0
+offset_bottom = 190.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0

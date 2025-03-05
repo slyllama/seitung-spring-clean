@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://clwa387aosmjj"]
 
 [ext_resource type="PackedScene" uid="uid://br410pd2j3ik4" path="res://lib/dispersion_golem/meshes/dispersion_golem.glb" id="1_h1nq4"]
-[ext_resource type="Script" path="res://lib/dispersion_golem/meshes/dispersion_golem.gd" id="1_pnw82"]
+[ext_resource type="Script" uid="uid://pdnla3mhuawf" path="res://lib/dispersion_golem/meshes/dispersion_golem.gd" id="1_pnw82"]
 [ext_resource type="Animation" uid="uid://cuy1yj6yk1q1m" path="res://lib/dispersion_golem/anims/appear.res" id="2_xlpjd"]
 [ext_resource type="Animation" uid="uid://b0jpv84fy8s3d" path="res://lib/dispersion_golem/anims/spin.res" id="3_cmyoc"]
 [ext_resource type="ArrayMesh" uid="uid://cpad8aq71wjk" path="res://maps/seitung/meshes/_star.res" id="5_y5ca6"]
@@ -39,8 +39,8 @@ size = Vector2(0.35, 0.35)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3xshx"]
 _data = {
-"appear": ExtResource("2_xlpjd"),
-"spin": ExtResource("3_cmyoc")
+&"appear": ExtResource("2_xlpjd"),
+&"spin": ExtResource("3_cmyoc")
 }
 
 [sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_hh2kt"]
@@ -165,8 +165,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b3d7x"]
 _data = {
-"RESET": SubResource("Animation_ux8s1"),
-"rock_out": SubResource("Animation_q5a2y")
+&"RESET": SubResource("Animation_ux8s1"),
+&"rock_out": SubResource("Animation_q5a2y")
 }
 
 [node name="DispersionGolem" type="Node3D"]

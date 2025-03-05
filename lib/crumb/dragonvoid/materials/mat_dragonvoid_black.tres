@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=9 format=3 uid="uid://d0m8idfvk4l2s"]
 
-[ext_resource type="Shader" path="res://lib/crumb/dragonvoid/materials/shaders/shader_dragonvoid.gdshader" id="1_g3ldx"]
+[ext_resource type="Shader" uid="uid://gidkvfvrxu1j" path="res://lib/crumb/dragonvoid/materials/shaders/shader_dragonvoid.gdshader" id="1_g3ldx"]
 
 [sub_resource type="Gradient" id="Gradient_tl57f"]
 offsets = PackedFloat32Array(0, 0.3, 0.7, 1)
@@ -30,8 +30,8 @@ gradient = SubResource("Gradient_qnsu5")
 [resource]
 render_priority = 1
 shader = ExtResource("1_g3ldx")
-shader_parameter/speed = 0.21
-shader_parameter/exponent = 1.0
 shader_parameter/v_gradient_texture = SubResource("GradientTexture2D_vsucu")
 shader_parameter/h_gradient_texture = SubResource("GradientTexture2D_32l0i")
 shader_parameter/smoke_texture = SubResource("NoiseTexture2D_v784o")
+shader_parameter/speed = 0.21
+shader_parameter/exponent = 1.0

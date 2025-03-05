@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://7s701kqjqy22"]
 
-[ext_resource type="Script" path="res://lib/hud/fx_list/fx_list.gd" id="1_p5mv1"]
+[ext_resource type="Script" uid="uid://cgicocf5fy3nu" path="res://lib/hud/fx_list/fx_list.gd" id="1_p5mv1"]
 
 [node name="FXList" type="HBoxContainer"]
 offset_right = 300.0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmqlnx8l6lfhf"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_g1okj"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_g1okj"]
 [ext_resource type="PackedScene" uid="uid://xwthb3yn3664" path="res://decorations/flower_patch/yellow_flowers.tscn" id="2_ub2q1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fu8ye"]

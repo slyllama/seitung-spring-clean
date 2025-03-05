@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://5er1m8wsi3x6"]
 
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="1_nnkjf"]
-[ext_resource type="Script" path="res://lib/dragger/dragger.gd" id="1_t4ceu"]
+[ext_resource type="Script" uid="uid://beynac4a7snig" path="res://lib/dragger/dragger.gd" id="1_t4ceu"]
 [ext_resource type="Texture2D" uid="uid://dxnrapd5778a0" path="res://lib/dragger/textures/arrow.png" id="4_hebx0"]
 [ext_resource type="Material" uid="uid://wv0q1g0bmi10" path="res://lib/dragger/materials/mat_dissolve.tres" id="4_ofanv"]
 [ext_resource type="AudioStream" uid="uid://bo5xhvyr6p7il" path="res://generic/sounds/tick.ogg" id="6_jdfpi"]

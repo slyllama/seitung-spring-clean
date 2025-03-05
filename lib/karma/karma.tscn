@@ -1,9 +1,9 @@
 [gd_scene load_steps=27 format=3 uid="uid://css5f06cjlswq"]
 
-[ext_resource type="Script" path="res://lib/karma/karma.gd" id="1_7siie"]
-[ext_resource type="Shader" path="res://lib/player/materials/shaders/shader_jade.gdshader" id="1_i10le"]
+[ext_resource type="Script" uid="uid://bs8s1bdo4nj13" path="res://lib/karma/karma.gd" id="1_7siie"]
+[ext_resource type="Shader" uid="uid://dgx6dwku1wkyn" path="res://lib/player/materials/shaders/shader_jade.gdshader" id="1_i10le"]
 [ext_resource type="Texture2D" uid="uid://begdpwr5l122o" path="res://lib/player/materials/textures/jade_mask.jpg" id="2_hua5p"]
-[ext_resource type="Shader" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="4_k1v8w"]
+[ext_resource type="Shader" uid="uid://b5ky3ygok7rsx" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="4_k1v8w"]
 [ext_resource type="ArrayMesh" uid="uid://cpad8aq71wjk" path="res://maps/seitung/meshes/_star.res" id="4_ma66g"]
 [ext_resource type="AudioStream" uid="uid://cf4vigsxqembu" path="res://lib/karma/sounds/karma_collect.ogg" id="6_vb0t3"]
 [ext_resource type="Texture2D" uid="uid://cjxn2j2i148cd" path="res://lib/karma/textures/ring.png" id="6_vvvmv"]
@@ -11,6 +11,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rq1by"]
 render_priority = 0
 shader = ExtResource("1_i10le")
+shader_parameter/mask = ExtResource("2_hua5p")
 shader_parameter/base_color = Color(0.169265, 1.841e-05, 0.16665, 1)
 shader_parameter/swirl_color = Color(0.892885, 0.113558, 0.716199, 1)
 shader_parameter/cloud_color = Color(0.999997, 0.564534, 0.418525, 1)
@@ -20,7 +21,6 @@ shader_parameter/speed_scale = 0.02
 shader_parameter/emission_color = Color(1, 1, 1, 1)
 shader_parameter/clear_coat = false
 shader_parameter/fresnel_amount = 3.0
-shader_parameter/mask = ExtResource("2_hua5p")
 
 [sub_resource type="SphereMesh" id="SphereMesh_renxr"]
 material = SubResource("ShaderMaterial_rq1by")
@@ -55,9 +55,9 @@ fill_from = Vector2(1, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_aqtf3"]
 render_priority = 1
 shader = ExtResource("4_k1v8w")
+shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/uv_scale = Vector2(1, 0.2)
 shader_parameter/albedo = Color(0.987833, 0.27, 1, 1)
-shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/x_gradient_texture = SubResource("GradientTexture2D_vc8yf")
 shader_parameter/y_gradient_texture = SubResource("GradientTexture2D_4bktw")
 

@@ -14,7 +14,7 @@ config/name="Jade Spring"
 run/main_scene="res://lib/main_menu/main_menu.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="seitung"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://generic/textures/splash.png"
@@ -183,6 +183,7 @@ sprint={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+rendering_device/pipeline_cache/enable=false
 anti_aliasing/quality/msaa_3d=2
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 anti_aliasing/quality/screen_space_aa=1

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c4i8r033odf3t"]
 
-[ext_resource type="Script" path="res://decorations/lush_grass/lush_grass_model.gd" id="1_omx5w"]
+[ext_resource type="Script" uid="uid://dxw3rkkg0hub1" path="res://decorations/lush_grass/lush_grass_model.gd" id="1_omx5w"]
 [ext_resource type="ArrayMesh" uid="uid://csqc0ex5tq4g0" path="res://maps/seitung/meshes/_grass.res" id="1_q1u6k"]
-[ext_resource type="Script" path="res://lib/foliage_spawner/foliage_spawner.gd" id="2_3b8rm"]
+[ext_resource type="Script" uid="uid://xov275jp0sjg" path="res://lib/foliage_spawner/foliage_spawner.gd" id="2_3b8rm"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_f2l2w"]
 transform_format = 1

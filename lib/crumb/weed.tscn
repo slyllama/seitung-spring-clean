@@ -1,19 +1,20 @@
 [gd_scene load_steps=31 format=4 uid="uid://dm88qsqr4e6bj"]
 
-[ext_resource type="Script" path="res://lib/crumb/weed.gd" id="1_lklqf"]
+[ext_resource type="Script" uid="uid://ct2tsdd8hptk4" path="res://lib/crumb/weed.gd" id="1_lklqf"]
 [ext_resource type="Shader" uid="uid://b5a7c3uofthq4" path="res://generic/materials/shaders/shader_foliage_base.tres" id="2_5nw6f"]
 [ext_resource type="Texture2D" uid="uid://butxx6fv7oeaf" path="res://lib/crumb/weed/materials/textures/weed_alpha.png" id="3_xjqgm"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="4_rqa4i"]
 [ext_resource type="Texture2D" uid="uid://ctvn0oehf2yjq" path="res://decorations/fountain/water_splash/textures/splash_mask.png" id="5_gjm0t"]
 [ext_resource type="AudioStream" uid="uid://rdru5wa16llr" path="res://lib/crumb/weed/sounds/weed_clear.ogg" id="6_xdr4b"]
 [ext_resource type="PackedScene" uid="uid://cgr6iytjeuj80" path="res://lib/crumb/bug_swarm/visual_area.tscn" id="7_ec7aa"]
-[ext_resource type="Shader" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="8_qtji3"]
+[ext_resource type="Shader" uid="uid://b457fsj08hjic" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="8_qtji3"]
 [ext_resource type="Texture2D" uid="uid://bdl3ocb44powe" path="res://lib/hud/screen_effects/textures/splatter_mask.jpg" id="9_hjyqp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x7hru"]
 render_priority = 0
 shader = ExtResource("2_5nw6f")
 shader_parameter/albedo = Color(0.7, 0.7, 0.7, 1)
+shader_parameter/texture_albedo = ExtResource("3_xjqgm")
 shader_parameter/distance_fade_min = 15.0
 shader_parameter/distance_fade_max = 13.0
 shader_parameter/alpha_scissor_threshold = 0.6
@@ -21,7 +22,6 @@ shader_parameter/alpha_antialiasing_edge = 0.2
 shader_parameter/backlight = 0.25
 shader_parameter/specularity = 0.0
 shader_parameter/normal_strength = 1.0
-shader_parameter/texture_albedo = ExtResource("3_xjqgm")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sajdi"]
 _surfaces = [{
@@ -63,8 +63,7 @@ point_count = 3
 curve = SubResource("Curve_gc8mo")
 
 [sub_resource type="Curve" id="Curve_4qnk2"]
-min_value = -360.0
-max_value = 360.0
+_limits = [-360.0, 360.0, 0.0, 1.0]
 _data = [Vector2(0, 233.814), 0.0, 0.0, 0, 0, Vector2(1, 18.5567), 0.0, 0.0, 0, 0]
 point_count = 2
 
@@ -179,8 +178,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ypjpg"]
 _data = {
-"RESET": SubResource("Animation_l2u7q"),
-"clear": SubResource("Animation_njoux")
+&"RESET": SubResource("Animation_l2u7q"),
+&"clear": SubResource("Animation_njoux")
 }
 
 [sub_resource type="Gradient" id="Gradient_pqiau"]
@@ -194,14 +193,14 @@ fill_to = Vector2(0, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_c531e"]
 render_priority = 2
 shader = ExtResource("8_qtji3")
+shader_parameter/mask_texture = ExtResource("9_hjyqp")
+shader_parameter/vertical_mask = SubResource("GradientTexture2D_ov7ee")
 shader_parameter/color = Color(0.64, 0.47072, 0.1984, 1)
 shader_parameter/uv_scale = Vector2(3.6, 0.43)
 shader_parameter/exponent = 0.5
 shader_parameter/time_scale = 0.07
-shader_parameter/distance_fade_min = null
-shader_parameter/distance_fade_max = null
-shader_parameter/mask_texture = ExtResource("9_hjyqp")
-shader_parameter/vertical_mask = SubResource("GradientTexture2D_ov7ee")
+shader_parameter/distance_fade_min = 0.0
+shader_parameter/distance_fade_max = 0.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6ljul"]
 material = SubResource("ShaderMaterial_c531e")

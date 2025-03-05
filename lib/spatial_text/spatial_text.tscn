@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1u7ykm887ak1"]
 
-[ext_resource type="Script" path="res://lib/spatial_text/spatial_text.gd" id="1_f6yik"]
+[ext_resource type="Script" uid="uid://bojd1lwobag1g" path="res://lib/spatial_text/spatial_text.gd" id="1_f6yik"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_pqkr1"]
 
 [node name="SpatialText" type="VisibleOnScreenNotifier3D"]

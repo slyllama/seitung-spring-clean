@@ -1,11 +1,11 @@
 [gd_scene load_steps=22 format=3 uid="uid://bxj3pc7r8l63r"]
 
 [ext_resource type="PackedScene" uid="uid://dytel2pgikquu" path="res://lib/gadget/gadget.tscn" id="1_7ikog"]
-[ext_resource type="Script" path="res://lib/pulley/pulley.gd" id="2_8d48b"]
+[ext_resource type="Script" uid="uid://dyc17fqe03hps" path="res://lib/pulley/pulley.gd" id="2_8d48b"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="3_ypg4v"]
 [ext_resource type="Material" uid="uid://d2qy2wq5wk0h1" path="res://lib/xray_mesh/materials/mat_xray.tres" id="4_cuapp"]
 [ext_resource type="PackedScene" uid="uid://ihnnrs54ttba" path="res://lib/pulley/meshes/pulley.glb" id="5_p28vv"]
-[ext_resource type="Shader" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="6_skcqu"]
+[ext_resource type="Shader" uid="uid://b5ky3ygok7rsx" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="6_skcqu"]
 [ext_resource type="Shader" uid="uid://cr660gpb0btrf" path="res://lib/player/materials/shaders/shader_engine_glow.tres" id="7_s6v5t"]
 
 [sub_resource type="Gradient" id="Gradient_ab0nn"]
@@ -36,9 +36,9 @@ fill_from = Vector2(1, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ud8gl"]
 render_priority = 0
 shader = ExtResource("6_skcqu")
-shader_parameter/uv_scale = Vector2(1, 0.5)
-shader_parameter/albedo = null
 shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
+shader_parameter/uv_scale = Vector2(1, 0.5)
+shader_parameter/albedo = Color(0, 0, 0, 1)
 shader_parameter/x_gradient_texture = SubResource("GradientTexture2D_l223y")
 shader_parameter/y_gradient_texture = SubResource("GradientTexture2D_4nqit")
 
@@ -59,11 +59,11 @@ noise = SubResource("FastNoiseLite_37k17")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_00gk1"]
 render_priority = -2
 shader = ExtResource("7_s6v5t")
+shader_parameter/noise = SubResource("NoiseTexture2D_1t7wh")
 shader_parameter/glow_color = Color(0.449252, 0.970457, 1, 1)
 shader_parameter/wobble_size = 0.2
 shader_parameter/wobble_intensity = 0.03
 shader_parameter/speed_scale = 0.1
-shader_parameter/noise = SubResource("NoiseTexture2D_1t7wh")
 
 [sub_resource type="QuadMesh" id="QuadMesh_f178q"]
 material = SubResource("ShaderMaterial_00gk1")

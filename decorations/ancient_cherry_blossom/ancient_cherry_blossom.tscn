@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://6xdrn3kee1v7"]
 
-[ext_resource type="Script" path="res://decorations/ancient_cherry_blossom/ancient_cherry_blossom.gd" id="1_abber"]
+[ext_resource type="Script" uid="uid://ds6xu88ks1kqg" path="res://decorations/ancient_cherry_blossom/ancient_cherry_blossom.gd" id="1_abber"]
 [ext_resource type="PackedScene" uid="uid://cvbgx6cdc7om5" path="res://decorations/ancient_cherry_blossom/ancient_cherry_blossom.glb" id="2_b2854"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_304li"]

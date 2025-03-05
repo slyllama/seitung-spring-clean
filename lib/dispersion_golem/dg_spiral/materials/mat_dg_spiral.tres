@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=9 format=3 uid="uid://btwesu3wu30i8"]
 
-[ext_resource type="Shader" path="res://lib/dispersion_golem/dg_spiral/materials/shaders/shader_dg_spiral.gdshader" id="1_y4bab"]
+[ext_resource type="Shader" uid="uid://oe04hn7n5l74" path="res://lib/dispersion_golem/dg_spiral/materials/shaders/shader_dg_spiral.gdshader" id="1_y4bab"]
 
 [sub_resource type="Gradient" id="Gradient_mxigj"]
 offsets = PackedFloat32Array(0, 0.1, 0.9, 1)
@@ -30,8 +30,8 @@ noise = SubResource("FastNoiseLite_oaadg")
 [resource]
 render_priority = 0
 shader = ExtResource("1_y4bab")
-shader_parameter/base_color = Color(0.870538, 0.00124582, 0.956388, 1)
-shader_parameter/h_position = 0.0540001
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_ye5m3")
+shader_parameter/base_color = Color(0.870538, 0.00124582, 0.956388, 1)
 shader_parameter/grad_h = SubResource("GradientTexture2D_1ovbc")
+shader_parameter/h_position = 0.0540001
 shader_parameter/grad_v = SubResource("GradientTexture2D_va0a6")

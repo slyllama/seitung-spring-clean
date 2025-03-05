@@ -1,3 +1,4 @@
+@tool
 extends Decoration
 
 const _mat_exp_ray = preload("res://decorations/light_ray/materials/mat_exp_ray.tres")

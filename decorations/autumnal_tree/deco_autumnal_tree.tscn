@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://3lblxj6dgvuv"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_qm4yw"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_qm4yw"]
 [ext_resource type="PackedScene" uid="uid://bfdhmct814tus" path="res://decorations/autumnal_tree/autumnal_tree.tscn" id="2_hcnfn"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_p6je2"]

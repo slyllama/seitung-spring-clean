@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://vvawrp8mc5xb"]
 
 [ext_resource type="StyleBox" uid="uid://bt8uive6gei3k" path="res://lib/ui_container/ui_container_style.tres" id="1_6jleo"]
-[ext_resource type="Script" path="res://lib/hud/quit_confirmation/quit_confirmation.gd" id="1_58e3o"]
+[ext_resource type="Script" uid="uid://cpm37vayd06b8" path="res://lib/hud/quit_confirmation/quit_confirmation.gd" id="1_58e3o"]
 [ext_resource type="Texture2D" uid="uid://xv8rsnsaeksv" path="res://generic/textures/corner.png" id="3_7a5ax"]
 
 [node name="QuitConfirmation" type="Panel"]

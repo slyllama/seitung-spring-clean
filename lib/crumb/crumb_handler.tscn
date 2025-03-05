@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddcm83g0l0n58"]
 
-[ext_resource type="Script" path="res://lib/crumb/crumb_handler.gd" id="1_u2j8k"]
+[ext_resource type="Script" uid="uid://7uderk0eh2yv" path="res://lib/crumb/crumb_handler.gd" id="1_u2j8k"]
 
 [node name="CrumbHandler" type="Node"]
 script = ExtResource("1_u2j8k")

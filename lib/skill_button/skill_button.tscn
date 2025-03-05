@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bq8xa3vmxn1qa" path="res://lib/skill_button/textures/_base_blank.png" id="1_7h740"]
 [ext_resource type="Texture2D" uid="uid://cnf7aaj3x2wdb" path="res://lib/skill_button/textures/empty.png" id="1_spyej"]
-[ext_resource type="Script" path="res://lib/skill_button/skill_button.gd" id="2_qy3x5"]
+[ext_resource type="Script" uid="uid://doq65lmjn5q60" path="res://lib/skill_button/skill_button.gd" id="2_qy3x5"]
 [ext_resource type="Texture2D" uid="uid://coftu1xcxomsv" path="res://lib/skill_button/textures/_base_active.png" id="4_ell5w"]
 [ext_resource type="FontFile" uid="uid://drvjsmav1gcj3" path="res://generic/fonts/ibm_plex_mono.otf" id="5_i52s4"]
 [ext_resource type="Texture2D" uid="uid://b50vn2vii3sfs" path="res://lib/skill_button/textures/lock.png" id="5_rpy1d"]
@@ -41,8 +41,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oapoh"]
 _data = {
-"RESET": SubResource("Animation_l7lqc"),
-"squeeze": SubResource("Animation_y5w6u")
+&"RESET": SubResource("Animation_l7lqc"),
+&"squeeze": SubResource("Animation_y5w6u")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5yqc4"]

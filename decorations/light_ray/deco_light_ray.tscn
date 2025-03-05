@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://do3fcqudbcd2x"]
 
-[ext_resource type="Script" path="res://decorations/light_ray/deco_light_ray.gd" id="1_3f2mh"]
+[ext_resource type="Script" uid="uid://b2grdee05q2b1" path="res://decorations/light_ray/deco_light_ray.gd" id="1_3f2mh"]
 [ext_resource type="PackedScene" uid="uid://b1eb6tuc5vgnl" path="res://decorations/light_ray/light_ray.glb" id="2_xo3ta"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v23nb"]

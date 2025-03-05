@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bcmn5bi4mfihi"]
 
-[ext_resource type="Script" path="res://lib/dispersion_golem/dg_fx.gd" id="1_s27mm"]
+[ext_resource type="Script" uid="uid://cfhnkkq481odp" path="res://lib/dispersion_golem/dg_fx.gd" id="1_s27mm"]
 
 [node name="DgFX" type="Node3D"]
 script = ExtResource("1_s27mm")

@@ -1,8 +1,8 @@
 [gd_scene load_steps=17 format=3 uid="uid://b0ampettqcu60"]
 
-[ext_resource type="Script" path="res://lib/fishing/fishing.gd" id="1_6qcg4"]
+[ext_resource type="Script" uid="uid://dyjemqnnlrivq" path="res://lib/fishing/fishing.gd" id="1_6qcg4"]
 [ext_resource type="Texture2D" uid="uid://cnkmwhjhb5h2j" path="res://lib/fishing/textures/base_asuran.png" id="2_386hq"]
-[ext_resource type="Shader" path="res://lib/dragger/shaders/shader_dissolve.gdshader" id="2_y3on4"]
+[ext_resource type="Shader" uid="uid://dfpqf46mxgi52" path="res://lib/dragger/shaders/shader_dissolve.gdshader" id="2_y3on4"]
 [ext_resource type="Texture2D" uid="uid://8e006712v0us" path="res://lib/fishing/textures/marker.png" id="3_7bdy4"]
 [ext_resource type="Texture2D" uid="uid://n0dr8y0nclty" path="res://lib/dragger/materials/textures/paint_mask.png" id="3_151ui"]
 [ext_resource type="Texture2D" uid="uid://dd8ram7ugtnj6" path="res://lib/hud/side_panel/textures/progress_base.png" id="4_7ig0d"]
@@ -12,11 +12,11 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gldn1"]
 shader = ExtResource("2_y3on4")
+shader_parameter/paint_mask = ExtResource("3_151ui")
 shader_parameter/paint_exponent = 0.0
 shader_parameter/alpha = 1.0
 shader_parameter/uv_scale = 3.0
 shader_parameter/arrow_reduce_alpha = false
-shader_parameter/paint_mask = ExtResource("3_151ui")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q4ydp"]
 texture = ExtResource("4_7ig0d")
@@ -26,11 +26,11 @@ texture = ExtResource("5_p21x7")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ny808"]
 shader = ExtResource("2_y3on4")
+shader_parameter/paint_mask = ExtResource("3_151ui")
 shader_parameter/paint_exponent = 1.0
 shader_parameter/alpha = 1.0
 shader_parameter/uv_scale = 1.0
 shader_parameter/arrow_reduce_alpha = false
-shader_parameter/paint_mask = ExtResource("3_151ui")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j00t0"]
 bg_color = Color(0, 0, 0, 0.862745)

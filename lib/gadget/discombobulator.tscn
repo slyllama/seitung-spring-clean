@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bm1eu0vwmgnl0"]
 
-[ext_resource type="Script" path="res://lib/gadget/discombobulator.gd" id="1_3e5cj"]
+[ext_resource type="Script" uid="uid://eo6quyhf4p6p" path="res://lib/gadget/discombobulator.gd" id="1_3e5cj"]
 [ext_resource type="PackedScene" uid="uid://dyis7gg7cjq3c" path="res://maps/seitung/props/cleaning_station/cleaning_station.glb" id="1_4xwxo"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="2_melv0"]
 [ext_resource type="PackedScene" uid="uid://dytel2pgikquu" path="res://lib/gadget/gadget.tscn" id="3_gw0sx"]

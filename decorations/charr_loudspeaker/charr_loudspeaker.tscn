@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dfy7b0oimuu33"]
 
-[ext_resource type="Script" path="res://lib/decoration/decoration.gd" id="1_bg2bo"]
+[ext_resource type="Script" uid="uid://b4dfqsglp2pr2" path="res://lib/decoration/decoration.gd" id="1_bg2bo"]
 [ext_resource type="PackedScene" uid="uid://b04nd7eys7svp" path="res://decorations/charr_loudspeaker/charr_loudspeaker.glb" id="2_l0w7d"]
 [ext_resource type="PackedScene" uid="uid://ul2xkcw6fjv5" path="res://decorations/charr_loudspeaker/quaver.tscn" id="3_qs8cm"]
 [ext_resource type="Texture2D" uid="uid://dinmdecfnvu6m" path="res://decorations/charr_loudspeaker/materials/textures/almorra_decal.png" id="4_77437"]

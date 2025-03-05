@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://di6uc8guyh2tr"]
 
 [ext_resource type="Theme" uid="uid://b3xj2nmifhpar" path="res://generic/themes/dwelt.tres" id="1_eo82w"]
-[ext_resource type="Script" path="res://lib/settings_handler/settings_pane/settings_dropdown.gd" id="1_jvcfa"]
+[ext_resource type="Script" uid="uid://d2xh02muu12y7" path="res://lib/settings_handler/settings_pane/settings_dropdown.gd" id="1_jvcfa"]
 
 [node name="SettingsDropdown" type="HBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
