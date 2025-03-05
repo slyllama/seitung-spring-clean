@@ -34,6 +34,19 @@ const DRAGON_DATA = {
 	}
 }
 
+func is_holding_dv_charge() -> bool: # is the player holding a Dragonvoid charge of any kind?
+	if ("discombobulator" in Global.current_effects
+		or "dv_charge" in Global.current_effects
+		or "d_jormag" in Global.current_effects
+		or "d_kralkatorrik" in Global.current_effects
+		or "d_mordremoth" in Global.current_effects
+		or "d_primordus" in Global.current_effects
+		or "d_soo_won" in Global.current_effects
+		or "d_zhaitan" in Global.current_effects):
+		return(true)
+	else:
+		return(false)
+
 func get_time() -> String:
 	var time = Time.get_time_dict_from_system()
 	return("%02d:%02d:%02d" % [time.hour, time.minute, time.second])

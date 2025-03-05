@@ -245,19 +245,19 @@ ignore_texture_size = true
 stretch_mode = 0
 flip_h = true
 
-[node name="Close" type="Button" parent="Base/ControlContainer"]
+[node name="Reset" type="Button" parent="Base/ControlContainer"]
 use_parent_material = true
 layout_mode = 2
 size_flags_vertical = 10
 focus_mode = 0
-text = "Close"
+text = "Reset"
 
-[node name="Reset" type="Button" parent="Base/ControlContainer"]
+[node name="Close" type="Button" parent="Base/ControlContainer"]
 use_parent_material = true
 layout_mode = 2
 size_flags_vertical = 8
 focus_mode = 0
-text = "Reset"
+text = "Close"
 
 [node name="Marker" type="Sprite2D" parent="Base"]
 use_parent_material = true
@@ -288,5 +288,5 @@ volume_db = -3.0
 [connection signal="button_down" from="Base/Close" to="." method="_on_close_button_down"]
 [connection signal="button_down" from="Base/ControlContainer/ArrowBox/Previous" to="." method="_on_previous_button_down"]
 [connection signal="button_down" from="Base/ControlContainer/ArrowBox/Next" to="." method="_on_next_button_down"]
-[connection signal="button_down" from="Base/ControlContainer/Close" to="." method="_on_close_button_down"]
 [connection signal="button_down" from="Base/ControlContainer/Reset" to="." method="_on_reset_button_down"]
+[connection signal="button_down" from="Base/ControlContainer/Close" to="." method="_on_close_button_down"]

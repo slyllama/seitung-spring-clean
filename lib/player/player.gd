@@ -83,12 +83,20 @@ func _ready() -> void:
 	# Spawn/clear golems in different circumstances
 	Global.debug_skill_used.connect(spawn_dgolems)
 	Global.add_effect.connect(func(id):
-		if id == "discombobulator" or id == "dv_charge":
+		if (id == "discombobulator" or id == "dv_charge"):
 			spawn_dgolems())
-	Global.fishing_canceled.connect(clear_dgolems)
-	Global.remove_effect.connect(func(_fx):
-		if _fx == "discombobulator" or _fx == "dv_charge":
-			clear_dgolems())
+	Global.remove_effect.connect(func(id):
+		await get_tree().process_frame
+		if (id == "discombobulator"
+			or id == "dv_charge"
+			or id == "d_jormag"
+			or id == "d_kralkatorrik"
+			or id == "d_mordremoth"
+			or id == "d_primordus"
+			or id == "d_soo_won"
+			or id == "d_zhaitan"):
+			if !Utilities.is_holding_dv_charge():
+				clear_dgolems())
 	
 	Global.hearts_emit.connect(play_hearts)
 	Global.camera = $Camera.camera # reference

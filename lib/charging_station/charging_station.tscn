@@ -1,12 +1,34 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckk5clionshof"]
+[gd_scene load_steps=15 format=3 uid="uid://ckk5clionshof"]
 
 [ext_resource type="PackedScene" uid="uid://dytel2pgikquu" path="res://lib/gadget/gadget.tscn" id="1_02rig"]
 [ext_resource type="Script" uid="uid://bgnpg6qu7y4g5" path="res://lib/charging_station/charging_station.gd" id="2_0owda"]
 [ext_resource type="Texture2D" uid="uid://8p3iw303ye44" path="res://generic/materials/textures/tile_64px_diff.png" id="2_mnhgl"]
+[ext_resource type="Shader" uid="uid://b457fsj08hjic" path="res://lib/crumb/materials/shaders/shader_visual_area.gdshader" id="3_kyorp"]
 [ext_resource type="Texture2D" uid="uid://k1b2p1a1utat" path="res://generic/materials/textures/tile_64px_norm.png" id="3_pmmu2"]
 [ext_resource type="PackedScene" uid="uid://d1u7ykm887ak1" path="res://lib/spatial_text/spatial_text.tscn" id="4_7ig55"]
+[ext_resource type="Texture2D" uid="uid://s1cx6pt1qrnu" path="res://lib/dialogue/textures/paint_mottled.jpg" id="4_ts2uj"]
 [ext_resource type="PackedScene" uid="uid://cvekevn35bs0" path="res://lib/charging_station/meshes/jade_turret.glb" id="5_hljxm"]
 [ext_resource type="ArrayMesh" uid="uid://7ii5d18xkdex" path="res://decorations/charr_loudspeaker/charr_loudspeaker.res" id="7_0px5r"]
+
+[sub_resource type="Gradient" id="Gradient_bbigo"]
+offsets = PackedFloat32Array(0.0780142, 0.156028, 0.269504)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cfxhs"]
+gradient = SubResource("Gradient_bbigo")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xhqk8"]
+render_priority = 2
+shader = ExtResource("3_kyorp")
+shader_parameter/mask_texture = ExtResource("4_ts2uj")
+shader_parameter/vertical_mask = SubResource("GradientTexture2D_cfxhs")
+shader_parameter/color = Color(1, 0.482353, 0, 1)
+shader_parameter/uv_scale = Vector2(2, 0.43)
+shader_parameter/exponent = 1.65
+shader_parameter/time_scale = 0.07
+shader_parameter/distance_fade_min = 0.0
+shader_parameter/distance_fade_max = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4f2fh"]
 albedo_color = Color(0.5, 0.5, 0.5, 1)
@@ -29,6 +51,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.5)
 
 [node name="VisualArea" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0.5)
+surface_material_override/0 = SubResource("ShaderMaterial_xhqk8")
 
 [node name="Placeholder" type="MeshInstance3D" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.25)

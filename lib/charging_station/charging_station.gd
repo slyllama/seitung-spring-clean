@@ -33,10 +33,8 @@ func _on_interacted() -> void:
 	if in_ui: return # don't open multiple
 	
 	if !"discombobulator" in Global.current_effects:
-		Global.announcement_sent.emit("((Charge needed.))")
+		Global.announcement_sent.emit("The Attenuator is ready to charge some Dispersion Flux.")
 		return
-	
-	Global.remove_effect.emit("discombobulator")
 	
 	in_ui = true
 	var _ui = AttenuatorUI.instantiate()

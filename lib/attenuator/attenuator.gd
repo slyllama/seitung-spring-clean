@@ -119,6 +119,7 @@ func render() -> void:
 			else:
 				if place == TUNES[current_dragon].size() - 1 and passing:
 					Global.add_effect.emit("d_" + current_dragon)
+					Global.remove_effect.emit("discombobulator")
 					$Success.play()
 					$Dragon.reveal(current_dragon)
 					await get_tree().create_timer(0.5).timeout

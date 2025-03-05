@@ -37,14 +37,16 @@ func interact() -> void:
 		Global.announcement_sent.emit(N1)
 		return # not unlocked yet
 	else:
-		if "discombobulator" in Global.current_effects:
-			Global.announcement_sent.emit(N1 + " " + N2)
-			return
-		elif "d_" + custom_data in Global.current_effects:
+		
+		if "d_" + custom_data in Global.current_effects:
 			var _f = FishingInstance.instantiate()
 			_f.completed.connect(clear)
 			_f.canceled.connect(func():
 				Global.remove_effect.emit("d_" + custom_data))
 			add_child(_f)
+			return
+		elif "discombobulator" in Global.current_effects:
+			Global.announcement_sent.emit(N1 + " " + N2)
+			return
 		else:
 			Global.announcement_sent.emit(N1 + " " + N2)

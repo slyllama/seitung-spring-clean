@@ -34,8 +34,7 @@ func _on_collision_interacted() -> void:
 	dialogue_data = DIALOGUE_DATA.duplicate(true)
 	
 	# Add an option to clear an effect (and golems) if you have it
-	if ("discombobulator" in Global.current_effects
-		or "dv_charge" in Global.current_effects):
+	if Utilities.is_holding_dv_charge():
 		dialogue_data._entry["options"].erase("close")
 		dialogue_data._entry.options["clear"] = "I'd like to return my Golems. (Clears effects.)"
 		dialogue_data._entry.options["close"] = "I'm all sorted, thanks."
@@ -53,4 +52,10 @@ func _on_collision_interacted() -> void:
 			$GolemSound.play()
 		elif id == "clear":
 			Global.remove_effect.emit("discombobulator")
-			Global.remove_effect.emit("dv_charge"))
+			Global.remove_effect.emit("dv_charge")
+			Global.remove_effect.emit("d_jormag")
+			Global.remove_effect.emit("d_karlkatorrik")
+			Global.remove_effect.emit("d_mordremoth")
+			Global.remove_effect.emit("d_primordus")
+			Global.remove_effect.emit("d_soo_won")
+			Global.remove_effect.emit("d_zhaitan"))
