@@ -14,8 +14,8 @@ noise = SubResource("FastNoiseLite_37k17")
 [resource]
 render_priority = -1
 shader = ExtResource("1_u7gul")
+shader_parameter/noise = SubResource("NoiseTexture2D_1t7wh")
 shader_parameter/glow_color = Color(0.30528, 0.53, 0.2491, 1)
 shader_parameter/wobble_size = 0.2
 shader_parameter/wobble_intensity = 0.03
 shader_parameter/speed_scale = 0.1
-shader_parameter/noise = SubResource("NoiseTexture2D_1t7wh")

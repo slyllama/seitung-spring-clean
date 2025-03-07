@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://do100ywnnmb0x"]
 
-[ext_resource type="Shader" path="res://generic/materials/shaders/shader_wood_twotone.gdshader" id="1_m477u"]
+[ext_resource type="Shader" uid="uid://fw3l3rae1gij" path="res://generic/materials/shaders/shader_wood_twotone.gdshader" id="1_m477u"]
 [ext_resource type="Texture2D" uid="uid://briwh7nndqy32" path="res://maps/seitung/materials/mat_arch/textures/wood_dark_norm.jpg" id="2_2puxu"]
 [ext_resource type="Texture2D" uid="uid://bkhyxloxjwoau" path="res://maps/seitung/materials/mat_arch/textures/wood_dark_diffuse.jpg" id="3_21sej"]
 
@@ -20,11 +20,11 @@ noise = SubResource("FastNoiseLite_p3bfn")
 [resource]
 render_priority = 0
 shader = ExtResource("1_m477u")
+shader_parameter/wood_texture = ExtResource("3_21sej")
+shader_parameter/wood_normal_texture = ExtResource("2_2puxu")
+shader_parameter/stain_mask_texture = SubResource("NoiseTexture2D_0hxwr")
 shader_parameter/base_brightness = 0.9
 shader_parameter/stain_brightness = 0.05
 shader_parameter/uv_scale = 2.0
 shader_parameter/saturation_value = 1.3
 shader_parameter/normal_strength = 0.65
-shader_parameter/wood_texture = ExtResource("3_21sej")
-shader_parameter/wood_normal_texture = ExtResource("2_2puxu")
-shader_parameter/stain_mask_texture = SubResource("NoiseTexture2D_0hxwr")

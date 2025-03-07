@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=9 format=3 uid="uid://dmk1xs34qj55k"]
 
-[ext_resource type="Shader" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="1_slrvx"]
+[ext_resource type="Shader" uid="uid://b5ky3ygok7rsx" path="res://lib/story_marker/materials/shaders/shader_ray.gdshader" id="1_slrvx"]
 
 [sub_resource type="Gradient" id="Gradient_ab0nn"]
 
@@ -30,8 +30,8 @@ fill_from = Vector2(1, 1)
 [resource]
 render_priority = 1
 shader = ExtResource("1_slrvx")
+shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/uv_scale = Vector2(1, 0.5)
 shader_parameter/albedo = Color(0.678431, 1, 0, 1)
-shader_parameter/ray_mask_texture = SubResource("NoiseTexture2D_77j05")
 shader_parameter/x_gradient_texture = SubResource("GradientTexture2D_vc8yf")
 shader_parameter/y_gradient_texture = SubResource("GradientTexture2D_1ijhh")

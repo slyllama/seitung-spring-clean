@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=3 uid="uid://bi0vh5e03n4ri"]
+[gd_scene load_steps=99 format=3 uid="uid://bi0vh5e03n4ri"]
 
 [ext_resource type="PackedScene" uid="uid://djua7a6d1wk2x" path="res://lib/map/map.tscn" id="1_uym6y"]
 [ext_resource type="Script" uid="uid://dkwr4scds44fq" path="res://maps/seitung/seitung.gd" id="2_7lwj0"]
@@ -69,6 +69,7 @@
 [ext_resource type="AudioStream" uid="uid://ded3ghoqlnt7g" path="res://maps/seitung/sounds/mus_winds.ogg" id="62_2xddo"]
 [ext_resource type="PackedScene" uid="uid://ckk5clionshof" path="res://lib/charging_station/charging_station.tscn" id="64_xbvsq"]
 [ext_resource type="PackedScene" uid="uid://kt2evf8a1gsv" path="res://lib/rock_out/rock_out.tscn" id="67_tdy4a"]
+[ext_resource type="PackedScene" uid="uid://dtbnacxprt3ci" path="res://lib/cid/otter_inherit.tscn" id="70_k0rfc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixf13"]
 albedo_color = Color(0.2, 0.2, 0.2, 1)
@@ -1214,3 +1215,6 @@ transform = Transform3D(-4.91687, 0, -0.90518, 0, 4.96, 0, 7.10086, 0, -0.626777
 
 [node name="ChargingStation" parent="." index="17" instance=ExtResource("64_xbvsq")]
 transform = Transform3D(-0.245494, 0, 0.969398, 0, 1, 0, -0.969398, 0, -0.245494, -8.40679, 0.276039, 0.582495)
+
+[node name="Otter" parent="." index="18" instance=ExtResource("70_k0rfc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.52641, 2.30356, -0.70871)

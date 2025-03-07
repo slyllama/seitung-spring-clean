@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://n24mva1r1w20"]
 
-[ext_resource type="Shader" path="res://maps/seitung/materials/mat_arch/shaders/shader_arch_roof.gdshader" id="1_p7vc7"]
+[ext_resource type="Shader" uid="uid://dit2236yqlggq" path="res://maps/seitung/materials/mat_arch/shaders/shader_arch_roof.gdshader" id="1_p7vc7"]
 [ext_resource type="Texture2D" uid="uid://b2fu2iskwm7ij" path="res://maps/seitung/materials/mat_arch/textures/arch_roof_diff.jpg" id="3_kikvi"]
 
 [sub_resource type="Gradient" id="Gradient_o1jfq"]
@@ -12,8 +12,8 @@ gradient = SubResource("Gradient_o1jfq")
 [resource]
 render_priority = 0
 shader = ExtResource("1_p7vc7")
+shader_parameter/ao_mask_texture = SubResource("GradientTexture1D_02etw")
+shader_parameter/stain_texture = ExtResource("3_kikvi")
 shader_parameter/colour_1 = Color(0.452384, 0.611433, 0.760958, 1)
 shader_parameter/colour_2 = Color(0.0838215, 0.0421156, 0.146077, 1)
 shader_parameter/uv_scale = 2.0
-shader_parameter/ao_mask_texture = SubResource("GradientTexture1D_02etw")
-shader_parameter/stain_texture = ExtResource("3_kikvi")

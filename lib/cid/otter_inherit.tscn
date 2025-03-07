@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dtbnacxprt3ci"]
+
+[ext_resource type="PackedScene" uid="uid://ce6t85c33bun0" path="res://lib/cid/otter.glb" id="1_0k2nv"]
+[ext_resource type="Material" uid="uid://dxtvga7qv5fiv" path="res://lib/cid/materials/mat_cid.tres" id="2_e2wgp"]
+[ext_resource type="Script" uid="uid://cfp1k3wx1e46x" path="res://lib/cid/otter_inherit.gd" id="2_xyf6y"]
+
+[sub_resource type="Curve" id="Curve_xyf6y"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.246835, 1), 0.0, 0.0, 0, 0, Vector2(0.449367, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_fyuce"]
+curve = SubResource("Curve_xyf6y")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_e3ec0"]
+emission_shape = 2
+emission_sphere_radius = 0.12
+initial_velocity_min = 0.1
+initial_velocity_max = 0.5
+gravity = Vector3(0, 2, 0)
+scale_min = 0.5
+scale_max = 1.2
+scale_curve = SubResource("CurveTexture_fyuce")
+
+[sub_resource type="SphereMesh" id="SphereMesh_lof38"]
+material = ExtResource("2_e2wgp")
+radius = 0.04
+height = 0.08
+radial_segments = 8
+rings = 4
+
+[node name="Otter" instance=ExtResource("1_0k2nv")]
+script = ExtResource("2_xyf6y")
+
+[node name="ParticleAttachment" type="BoneAttachment3D" parent="OtterArmature/Skeleton3D" index="1"]
+transform = Transform3D(0.029029, -0.970224, -0.240463, -0.116283, -0.242209, 0.96323, -0.992792, -9.31323e-10, -0.119851, -0.3171, -0.118155, 3.07002e-08)
+bone_name = "Bone.002"
+bone_idx = 2
+use_external_skeleton = true
+external_skeleton = NodePath("..")
+
+[node name="Bubbles" type="GPUParticles3D" parent="OtterArmature/Skeleton3D/ParticleAttachment" index="0"]
+amount = 16
+lifetime = 0.7
+explosiveness = 0.2
+randomness = 0.7
+process_material = SubResource("ParticleProcessMaterial_e3ec0")
+draw_pass_1 = SubResource("SphereMesh_lof38")

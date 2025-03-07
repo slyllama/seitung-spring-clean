@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dxtvga7qv5fiv"]
+
+[ext_resource type="Shader" uid="uid://2bvsg15mx62t" path="res://lib/cid/materials/shaders/shader_cid.gdshader" id="1_ra8k1"]
+[ext_resource type="Texture2D" uid="uid://bxdnte2jws5s7" path="res://lib/cid/materials/textures/stars_diff.jpg" id="2_m0gmf"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ra8k1")
+shader_parameter/stars_texture = ExtResource("2_m0gmf")
+shader_parameter/uv_scale = Vector2(4, 2)
+shader_parameter/modulate = Color(1, 1, 1, 1)
